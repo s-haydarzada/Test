@@ -169,9 +169,10 @@ body {
     text-align: center;
     line-height: 50px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
-.right_payment h4:hover,
+
 .right_flat h4:hover {
     background-color: blue;
     color: white;
