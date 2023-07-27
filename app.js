@@ -18,7 +18,9 @@ function generate() {
 
 let payment = document.querySelectorAll("#payment h4");
 let inputs = document.querySelectorAll("#input div");
-let flats = document.querySelectorAll("#flats_choose h4")
+let flats = document.querySelectorAll("#flats_choose h4");
+let floors = document.querySelectorAll("#floors div");
+let rooms_count=document.querySelectorAll("#rooms_count div")
 
 let numbers = document.querySelectorAll("#numbers div");
 let j = 0;
@@ -43,9 +45,24 @@ for (let i = 0; i < payment.length; i++) {
         payment[i].classList.toggle("selected")
     })
 }
+
+
 for (let i = 0; i < flats.length; i++) {
     flats[i].addEventListener("click", () => {
-        flats[i].classList.toggle("selected")
+        flats[i].classList.add("selected")
+    })
+}
+
+
+for (let i = 0; i < floors.length; i++) {
+    floors[i].addEventListener("click", () => {
+        floors[i].classList.toggle("selected")
+    })
+}
+
+for (let i = 0; i < rooms_count.length; i++) {
+    rooms_count[i].addEventListener("click", () => {
+        rooms_count[i].classList.toggle("selected")
     })
 }
 

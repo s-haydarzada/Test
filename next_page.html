@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,105 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+
 <body>
-<div class="container">
-    <div class="left">
-        <h4>Dogum tarixinizi asagidaki duymeler vasitesi ile daxil edin</h4>
-        <div class="container_left" id="numbers">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div class="close">
-                <i class="fa-solid fa-xmark"></i>
+    <div class="header">
+        <div class="container">
+            <div class="left">
+                <h4>Dogum tarixinizi asagidaki duymeler vasitesi ile daxil edin</h4>
+                <div class="container_left" id="numbers">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div class="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div>0</div>
+                    <div class="previous">
+                        <i class="fa-solid fa-left-long"></i>
+                    </div>
+                </div>
+                <div class="date">
+                    <div class="child">
+                        <span>12</span>
+                    </div>
+                    <span class="slash">/</span>
+
+                    <div class="child">
+                        <span>02</span>
+                    </div>
+
+                    <span class="slash">/</span>
+
+                    <div class="child">
+                        <span>1991</span>
+                    </div>
+                </div>
             </div>
-            <div>0</div>
-            <div class="previous">
-                <i class="fa-solid fa-left-long"></i>
+            <div class="right"></div>
+        </div>
+        <div class="flats_choose">
+            <div>
+                <h3>Bina tipi</h3>
+            </div>
+            <div id="floors" class="floors">
+                <div>9 mertebeli</div>
+                <div>12 mertebeli</div>
             </div>
         </div>
-        
+        <div class="category">
+            <div>
+                <h3>Mertebe secimi</h3>
+            </div>
+            <div class="category_choose">
+                <select name="number" id="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="number" id="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div>
+                <h3>Otaq sayi</h3>
+            </div>
+            <div class="rooms_count" id="rooms_count">
+                <div>1otaqli</div>
+                <div>2otaqli</div>
+                <div>3otaqli</div>
+                <div>4otaqli</div>
+            </div>
+        </div>
     </div>
-    <div class="right"></div>
-</div>
-</div>
+
+    <script src="./app.js"></script>
 </body>
+
 </html>
