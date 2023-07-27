@@ -20,7 +20,8 @@ let payment = document.querySelectorAll("#payment h4");
 let inputs = document.querySelectorAll("#input div");
 let flats = document.querySelectorAll("#flats_choose h4");
 let floors = document.querySelectorAll("#floors div");
-let rooms_count=document.querySelectorAll("#rooms_count div")
+let rooms_count=document.querySelectorAll("#rooms_count div");
+let type=document.querySelectorAll("#types div");
 
 let numbers = document.querySelectorAll("#numbers div");
 let j = 0;
@@ -63,6 +64,12 @@ for (let i = 0; i < floors.length; i++) {
 for (let i = 0; i < rooms_count.length; i++) {
     rooms_count[i].addEventListener("click", () => {
         rooms_count[i].classList.toggle("selected")
+    })
+}
+
+for (let i = 0; i < type.length; i++) {
+    type[i].addEventListener("click", () => {
+        type[i].classList.toggle("selected")
     })
 }
 

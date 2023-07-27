@@ -106,31 +106,32 @@ body {
     padding-right: 10px;
 }
 
-.flats_choose {
+.flats_choose,.types {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid rgb(213, 209, 209);
     width: 300px;
     height: 150px;
     margin-left: 30px;
+    margin-top: 10px;
 
 }
 
-.flats_choose div{
+.flats_choose div,.types div{
     width: 300px;
     height: 50px;
     border: 1px solid rgb(213, 209, 209);
     line-height: 50px;
 }
 
-.flats_choose h3,.category h3 {
+.flats_choose h3,.category h3,.types h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 40px;
 }
 
-.floors{
+.floors,.type{
     cursor: pointer;
 }
 
@@ -141,11 +142,11 @@ body {
 
 .category{
     width: 300px;
-    height: 800px;
+    height: 350px;
     background-color: white;
     margin-left: 30px;
     margin-top: 10px;
-    
+    border: 1px solid rgb(213, 209, 209);
 }
 
 .category div{
@@ -177,7 +178,9 @@ select{
     text-align: left;
 }
 
-.rooms_count div{
+.rooms_count div,.type div{
     padding-left: 15px;
     cursor: pointer;
 }
+
+
