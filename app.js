@@ -18,7 +18,7 @@ function generate() {
 
 let payment = document.querySelectorAll("#payment h4");
 let inputs = document.querySelectorAll("#input div");
-let flats = document.querySelectorAll("#flats_choose h4");
+let flats = document.querySelectorAll("#flats_choose");
 let floors = document.querySelectorAll("#floors div");
 let rooms_count = document.querySelectorAll("#rooms_count div");
 let type = document.querySelectorAll("#types div");
@@ -65,12 +65,18 @@ for (let i = 0; i < payment.length; i++) {
     })
 }
 
+    
+    function addClassToClickedDiv(event) {
+        flats.forEach((item) => {
+            item.classList.remove('selected');
+        });
 
-for (let i = 0; i < flats.length; i++) {
-    flats[i].addEventListener("click", () => {
-        flats[i].classList.add("selected")
-    })
-}
+        event.target.classList.add("selected");
+    }
+
+    flats.forEach((item) => {
+        item.addEventListener('click', addClassToClickedDiv);
+    });
 
 
 for (let i = 0; i < floors.length; i++) {
