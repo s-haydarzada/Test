@@ -20,17 +20,35 @@ let payment = document.querySelectorAll("#payment h4");
 let inputs = document.querySelectorAll("#input div");
 let flats = document.querySelectorAll("#flats_choose h4");
 let floors = document.querySelectorAll("#floors div");
-let rooms_count=document.querySelectorAll("#rooms_count div");
-let type=document.querySelectorAll("#types div");
+let rooms_count = document.querySelectorAll("#rooms_count div");
+let type = document.querySelectorAll("#types div");
+let birthday = document.querySelectorAll("#date div");
+let second_number = document.querySelectorAll("#number div")
 
 let numbers = document.querySelectorAll("#numbers div");
 let j = 0;
+let k = 0;
+
+// for (let i = 0; i < second_number.length; i++) {
+//     second_number[i].addEventListener("click", () => {        
+//         debugger;
+//         if (i<2) {
+//             birthday[k].innerHTML += second_number[i].innerHTML;
+//         }
+//         else{
+//             k++;
+//             birthday[k].innerHTML += second_number[i].innerHTML;
+//             i++;
+//         }
+//     })
+// }
 
 for (let i = 0; i < numbers.length; i++) {
     numbers[i].addEventListener("click", () => {
         if (j < 6) {
             if (!inputs[j].innerHTML)
                 inputs[j].innerHTML = numbers[i].innerHTML;
+
 
             uniquechar2 += numbers[i].innerHTML;
             if (j == 5 && uniquechar != uniquechar2) {
